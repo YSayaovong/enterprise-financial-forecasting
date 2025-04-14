@@ -18,7 +18,8 @@ This project simulates a corporate financial forecasting pipeline that:
 
 
 ## 📸 Dashboard Preview
-*Insert screenshots of your Power BI dashboard here*
+
+![Forecasting Dashboard](images/forcasting_model.PNG)
 
 ## 🚀 Key Features
 - Forecast vs Actual comparison of Revenue and Net Income
@@ -34,3 +35,5 @@ Yengkong Sayaovong
 ---
 
 > 📌 *This is part of my Financial Data Analyst portfolio — built to demonstrate forecasting, ETL, and dashboarding capabilities at a senior level.*
+
+

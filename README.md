@@ -38,47 +38,42 @@ Implemented a scenario planner with a slicer-driven toggle between:
 - **Aggressive Case** – Assumes 10% growth across categories  
 - **Conservative Case** – Includes macroeconomic slowdown, cuts 8% from projections  
 
-Uses DAX and What-If Parameters to dynamically update forecast visuals and KPIs.
+Built using **DAX** and **What-If Parameters** to dynamically update forecast visuals and KPIs.
 
 ---
 
-## 📈 Dashboard Preview
+## 🔁 Workflow Diagram
+
+[ Excel CSV Input ] ↓ [ Python Forecast Script ] ↓ [ PostgreSQL Forecast Output Table ] ↓ [ Power BI Dashboard ] ←— Slicers (Scenario, Date)
+
+
+---
+
+## 🎯 Business Impact
+
+- ⏱️ **Reduced monthly forecast cycle time by 65%**
+- 📈 **Improved accuracy of projections by 30%** *(validated via RMSE)*
+- 💬 **Delivered clean, executive-facing visuals** via Power BI
+- 🌱 **Flexible to expand with additional drivers** (e.g., marketing spend, labor, inflation)
+
+---
+
+## 📂 File Structure
+
+enterprise-financial-forecasting/ ├── data/ │ └── historical_financials.csv ├── notebooks/ │ └── forecast_model_pipeline.ipynb ├── dashboards/ │ └── Forecasting_Executive_Dashboard.pbix ├── outputs/ │ └── forecast_vs_actual.csv ├── images/ │ ├── dashboard_forecast_actual.png │ └── dashboard_scenarios.png └── README.md
+
+
+---
+
+## 🖼️ Dashboard Preview
 
 ![Dashboard Forecast vs Actual](images/dashboard_forecast_actual.png)  
 ![Scenario Planner Example](images/dashboard_scenarios.png)
 
 ---
 
-## 🔁 Workflow Diagram
+## 📬 Contact
 
-```text
-[ Excel CSV Input ]
-         ↓
-[ Python Forecast Script ]
-         ↓
-[ PostgreSQL Forecast Output Table ]
-         ↓
-[ Power BI Dashboard ] ←— Slicers (Scenario, Date)
-
-📌 Business Impact
-⏱️ Reduced monthly forecast cycle time by 65%
-
-🎯 Improved accuracy of projections by 30% (validated via RMSE)
-
-💬 Delivered clean, executive-facing visuals via Power BI
-
-🧩 Flexible to expand with additional drivers (marketing spend, labor, etc.)
-
-enterprise-financial-forecasting/
-├── data/
-│   └── historical_financials.csv
-├── notebooks/
-│   └── forecast_model_pipeline.ipynb
-├── dashboards/
-│   └── Forecasting_Executive_Dashboard.pbix
-├── outputs/
-│   └── forecast_vs_actual.csv
-├── images/
-│   └── dashboard_forecast_actual.png
-│   └── dashboard_scenarios.png
-└── README.md
+Created by **Yengkong Sayaovong**  
+[LinkedIn](https://www.linkedin.com/in/YengkongSayaovong)  
+[Email](mailto:ysayaovong@gmail.com)

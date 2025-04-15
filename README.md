@@ -44,7 +44,13 @@ Built using **DAX** and **What-If Parameters** to dynamically update forecast vi
 
 ## 🔁 Workflow Diagram
 
-[ Excel CSV Input ] ↓ [ Python Forecast Script ] ↓ [ PostgreSQL Forecast Output Table ] ↓ [ Power BI Dashboard ] ←— Slicers (Scenario, Date)
+[ Excel CSV Input ] 
+↓
+[ Python Forecast Script ]
+↓
+[ PostgreSQL Forecast Output Table ]
+↓
+[ Power BI Dashboard ] ←— Slicers (Scenario, Date)
 
 
 ---
@@ -60,7 +66,19 @@ Built using **DAX** and **What-If Parameters** to dynamically update forecast vi
 
 ## 📂 File Structure
 
-enterprise-financial-forecasting/ ├── data/ │ └── historical_financials.csv ├── notebooks/ │ └── forecast_model_pipeline.ipynb ├── dashboards/ │ └── Forecasting_Executive_Dashboard.pbix ├── outputs/ │ └── forecast_vs_actual.csv ├── images/ │ ├── dashboard_forecast_actual.png │ └── dashboard_scenarios.png └── README.md
+enterprise-financial-forecasting/ 
+├── data/ 
+│ └── historical_financials.csv 
+├── notebooks/ 
+│ └── forecast_model_pipeline.ipynb 
+├── dashboards/ 
+│ └── Forecasting_Executive_Dashboard.pbix 
+├── outputs/ 
+│ └── forecast_vs_actual.csv 
+├── images/ 
+│ ├── dashboard_forecast_actual.png 
+│ └── dashboard_scenarios.png 
+└── README.md
 
 
 ---

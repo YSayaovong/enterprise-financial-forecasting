@@ -76,8 +76,7 @@ enterprise-financial-forecasting/
 ├── outputs/ 
 │ └── forecast_vs_actual.csv 
 ├── images/ 
-│ ├── dashboard_forecast_actual.png 
-│ └── dashboard_scenarios.png 
+│ ├── forecast_model
 └── README.md
 
 
@@ -85,8 +84,8 @@ enterprise-financial-forecasting/
 
 ## 🖼️ Dashboard Preview
 
-![Dashboard Forecast vs Actual](images/dashboard_forecast_actual.png)  
-![Scenario Planner Example](images/dashboard_scenarios.png)
+![Forecast Model](images/forcasting_model.PNG)  
+
 
 ---
 

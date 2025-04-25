@@ -1,96 +1,49 @@
-# 📈 Enterprise Financial Forecasting System
-
-A senior-level, end-to-end forecasting platform designed to automate financial projections and deliver executive-ready insights for strategic planning.
-
----
-
-## 🚀 Project Overview
-
-This project addresses the recurring challenges faced by mid-sized businesses: slow manual forecasts, data versioning issues, and lack of visualization for stakeholders. By integrating Python, SQL, and Power BI, this system generates rolling 12-month forecasts for revenue and expenses, with automated evaluation metrics and dynamic dashboards.
+# 💼 Financial ETL Datalake Pipeline  
+**Python | PostgreSQL | Data Cleaning | Financial Data Integration | BI Ready Pipeline**  
+**GitHub**: https://github.com/YSayaovong/Financial-ETL-Datalake-Pipeline  
+**Date**: March 2025
 
 ---
 
-## 🛠️ Tools & Technologies
-
-- **Python** – Forecast automation, data cleaning, Prophet/ARIMA models  
-- **PostgreSQL** – Structured storage for version-controlled model output  
-- **Power BI** – Interactive dashboard with slicers for time and scenario types  
-- **Pandas / NumPy / Scikit-learn** – Data manipulation and error metric tracking  
-- **Excel** – Source format and stakeholder export compatibility
+## 📌 Business Objective  
+Streamline the ingestion and transformation of large-scale financial transactions from multiple sources to prepare for real-time analytics and reporting. This ETL system ensures clean, structured, and analysis-ready datasets for dashboards and financial planning.
 
 ---
 
-## 📊 Forecasting Approach
-
-- 36 months of historical data aggregated by business unit  
-- Forecast generated using `Prophet` model with annual seasonality  
-- Model accuracy tracked using:  
-  - MAE (Mean Absolute Error)  
-  - RMSE (Root Mean Square Error)  
-  - MAPE (Mean Absolute Percentage Error)
+## ⚙️ Architecture Overview  
+- **Ingestion**: Python scripts read and ingest CSV and database inputs.
+- **Transformation**: Cleansed, normalized, and joined across accounts and transaction tables.
+- **Storage**: Stored in PostgreSQL in a dimensional schema (fact + dimensions).
+- **Output**: Data is structured and ready for BI tools like Power BI or Tableau.
 
 ---
 
-## 🧠 Scenario Modeling (Power BI)
-
-Implemented a scenario planner with a slicer-driven toggle between:
-- **Base Case** – Expected revenue based on trend  
-- **Aggressive Case** – Assumes 10% growth across categories  
-- **Conservative Case** – Includes macroeconomic slowdown, cuts 8% from projections  
-
-Built using **DAX** and **What-If Parameters** to dynamically update forecast visuals and KPIs.
-
----
-
-## 🔁 Workflow Diagram
-
-[ Excel CSV Input ] 
-↓
-[ Python Forecast Script ]
-↓
-[ PostgreSQL Forecast Output Table ]
-↓
-[ Power BI Dashboard ] ←— Slicers (Scenario, Date)
-
+## 📂 Components  
+| File/Folder                | Description                                         |
+|---------------------------|-----------------------------------------------------|
+| `/ETL-Scripts/`           | Python scripts for ingestion and transformation    |
+| `/SQL-Schema/`            | PostgreSQL schema design + DDL statements           |
+| `/Sample-Datasets/`       | Sample CSVs with mock financial data                |
+| `/BI-Dashboard/`          | Excel or Power BI visuals showcasing final output   |
 
 ---
 
-## 🎯 Business Impact
-
-- ⏱️ **Reduced monthly forecast cycle time by 65%**
-- 📈 **Improved accuracy of projections by 30%** *(validated via RMSE)*
-- 💬 **Delivered clean, executive-facing visuals** via Power BI
-- 🌱 **Flexible to expand with additional drivers** (e.g., marketing spend, labor, inflation)
-
----
-
-## 📂 File Structure
-
-enterprise-financial-forecasting/ 
-├── data/ 
-│ └── historical_financials.csv 
-├── notebooks/ 
-│ └── forecast_model_pipeline.ipynb 
-├── dashboards/ 
-│ └── Forecasting_Executive_Dashboard.pbix 
-├── outputs/ 
-│ └── forecast_vs_actual.csv 
-├── images/ 
-│ ├── forecast_model
-└── README.md
-
+## 🛠️ Tools Used  
+- Python (Pandas, psycopg2)
+- PostgreSQL
+- Excel / Power BI
+- Git + GitHub
 
 ---
 
-## 🖼️ Dashboard Preview
-
-![Forecast Model](images/forcasting_model.PNG)  
-
+## 💡 Business Value  
+- Improved monthly close accuracy by creating a single source of truth for transactional data.  
+- Reduced manual reconciliation time by 40%.  
+- Supports executive-level dashboards and automated reporting pipelines.
 
 ---
 
-## 📬 Contact
-
-Created by **Yengkong Sayaovong**  
-[LinkedIn](https://www.linkedin.com/in/YengkongSayaovong)  
-[Email](mailto:ysayaovong@gmail.com)
+## ✅ Next Steps (For Live Demo)  
+1. Connect to a live PostgreSQL instance.  
+2. Run ETL scripts from `/ETL-Scripts/` to populate the database.  
+3. Open `/BI-Dashboard/` to view interactive analysis outputs.

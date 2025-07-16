@@ -1,49 +1,53 @@
-# 💼 Financial ETL Datalake Pipeline  
-**Python | PostgreSQL | Data Cleaning | Financial Data Integration | BI Ready Pipeline**  
-**GitHub**: https://github.com/YSayaovong/Financial-ETL-Datalake-Pipeline  
-**Date**: March 2025
+# 🏗️ Enterprise Financial Forecasting (Data Engineering Pipeline)
+
+This project simulates a batch ETL pipeline designed to support enterprise-level financial forecasting using structured financial data, Excel modeling, SQL/Python processing, and a Power BI dashboard.
 
 ---
 
-## 📌 Business Objective  
-Streamline the ingestion and transformation of large-scale financial transactions from multiple sources to prepare for real-time analytics and reporting. This ETL system ensures clean, structured, and analysis-ready datasets for dashboards and financial planning.
+## 📁 Repository Structure
+
+enterprise-financial-forecasting/
+│
+├── data_raw/ # Source financial data (CSV, Excel, etc.)
+├── excel_model/ # Excel forecasting model logic
+├── images/ # Visuals used in documentation or dashboard
+├── python_scripts/ # Python scripts for ETL, automation (future-ready)
+│
+├── Enterprise Financial Forecasting System.pbix # Power BI dashboard
+├── Enterprise_Financial_Forecasting_Case_Study.pdf # Project summary and business context
+├── forecasting_template.xlsx # Clean template for monthly updates
+├── README.md
+---
+
+## 🧩 Project Overview
+
+**Enterprise Financial Forecasting** models the financial performance of a mid-sized organization by simulating how financial data flows through a structured data pipeline—from raw input to a reporting-ready dashboard.
+
+This solution highlights:
+- ETL principles using SQL and Python
+- Forecasting logic in Excel
+- Data modeling and visualization in Power BI
+- Potential for orchestration via Airflow or Power Query
 
 ---
 
-## ⚙️ Architecture Overview  
-- **Ingestion**: Python scripts read and ingest CSV and database inputs.
-- **Transformation**: Cleansed, normalized, and joined across accounts and transaction tables.
-- **Storage**: Stored in PostgreSQL in a dimensional schema (fact + dimensions).
-- **Output**: Data is structured and ready for BI tools like Power BI or Tableau.
+## 🔧 Technologies Used
+
+| Tool           | Function                                |
+|----------------|-----------------------------------------|
+| Excel          | Forecast calculations & base modeling   |
+| SQL (planned)  | Raw data preprocessing & joins          |
+| Python (scripts)| ETL transformation logic               |
+| Power BI       | KPI dashboard for finance & variance    |
+| GitHub         | Version control                         |
 
 ---
 
-## 📂 Components  
-| File/Folder                | Description                                         |
-|---------------------------|-----------------------------------------------------|
-| `/ETL-Scripts/`           | Python scripts for ingestion and transformation    |
-| `/SQL-Schema/`            | PostgreSQL schema design + DDL statements           |
-| `/Sample-Datasets/`       | Sample CSVs with mock financial data                |
-| `/BI-Dashboard/`          | Excel or Power BI visuals showcasing final output   |
+## 📈 Pipeline Workflow
 
----
-
-## 🛠️ Tools Used  
-- Python (Pandas, psycopg2)
-- PostgreSQL
-- Excel / Power BI
-- Git + GitHub
-
----
-
-## 💡 Business Value  
-- Improved monthly close accuracy by creating a single source of truth for transactional data.  
-- Reduced manual reconciliation time by 40%.  
-- Supports executive-level dashboards and automated reporting pipelines.
-
----
-
-## ✅ Next Steps (For Live Demo)  
-1. Connect to a live PostgreSQL instance.  
-2. Run ETL scripts from `/ETL-Scripts/` to populate the database.  
-3. Open `/BI-Dashboard/` to view interactive analysis outputs.
+```mermaid
+graph TD;
+    A[Raw Financial Data (data_raw)] --> B[Python/SQL Scripts];
+    B --> C[Excel Model (forecasting_template.xlsx)];
+    C --> D[Power BI Dashboard (.pbix)];
+    D --> E[Executive Decision Support];

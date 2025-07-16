@@ -36,7 +36,7 @@ This solution highlights:
     C --> D[Power BI Dashboard (.pbix)];
     D --> E[Executive Decision Support];
 
-📊 Dashboard Metrics
+## 📊 Dashboard Metrics
 Monthly Revenue Forecast vs. Actual
 
 Expense Trends by Department
@@ -47,7 +47,7 @@ Burn Rate and Net Cash Position
 
 Forecast Accuracy Over Time
 
-🧠 Data Engineering Skills Demonstrated
+## 🧠 Data Engineering Skills Demonstrated
 Batch data pipeline simulation
 
 Forecast modeling logic layered post-ingestion
@@ -58,7 +58,7 @@ Dashboard integration with Power BI
 
 Modular repo design for scalability
 
-🔜 Roadmap
+## 🔜 Roadmap
  Add SQL staging scripts for raw → clean dataflow
 
  Schedule automated forecast refresh with Python or Power Query
@@ -67,11 +67,11 @@ Modular repo design for scalability
 
  Dockerize for deployment and scalability
 
-📄 Case Study Included
+## 📄 Case Study Included
 📘 Enterprise_Financial_Forecasting_Case_Study.pdf
 Includes context, business goals, assumptions, and how this pipeline supports leadership-level decisions.
 
-👤 Author
+## 👤 Author
 Yengkong Sayaovong
 Entry-Level Data Engineer | Financial Systems Background
 GitHub: @YSayaovong

@@ -72,9 +72,13 @@ Modular repo design for scalability
 Includes context, business goals, assumptions, and how this pipeline supports leadership-level decisions.
 
 ## 👤 Author
-Yengkong Sayaovong;
-Entry-Level Data Engineer | Mechanical Design Background;
-GitHub: @YSayaovong;
+Yengkong Sayaovong
+
+Entry-Level Data Engineer | Mechanical Design Background
+
+GitHub: @YSayaovong
+
 LinkedIn: linkedin.com/in/yengkongsayaovong
+
 
 🧩 This project bridges finance and data engineering—demonstrating how forecasting systems can be structured as production-grade data pipelines.

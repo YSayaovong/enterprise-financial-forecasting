@@ -69,6 +69,7 @@ Modular repo design for scalability
 
 ## 📄 Case Study Included
 📘 Enterprise_Financial_Forecasting_Case_Study.pdf
+
 Includes context, business goals, assumptions, and how this pipeline supports leadership-level decisions.
 
 ## 👤 Author

@@ -4,20 +4,6 @@ This project simulates a batch ETL pipeline designed to support enterprise-level
 
 ---
 
-## 📁 Repository Structure
-
-enterprise-financial-forecasting/
-│
-├── data_raw/ # Source financial data (CSV, Excel, etc.)
-├── excel_model/ # Excel forecasting model logic
-├── images/ # Visuals used in documentation or dashboard
-├── python_scripts/ # Python scripts for ETL, automation (future-ready)
-│
-├── Enterprise Financial Forecasting System.pbix # Power BI dashboard
-├── Enterprise_Financial_Forecasting_Case_Study.pdf # Project summary and business context
-├── forecasting_template.xlsx # Clean template for monthly updates
-├── README.md
----
 
 ## 🧩 Project Overview
 

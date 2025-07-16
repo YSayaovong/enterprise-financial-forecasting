@@ -37,15 +37,11 @@ This solution highlights:
     D --> E[Executive Decision Support];
 
 ## 📊 Dashboard Metrics
-Monthly Revenue Forecast vs. Actual
-
-Expense Trends by Department
-
-Forecast Variance % (Category-level)
-
-Burn Rate and Net Cash Position
-
-Forecast Accuracy Over Time
+ - Monthly Revenue Forecast vs. Actual
+ - Expense Trends by Department
+ - Forecast Variance % (Category-level)
+ - Burn Rate and Net Cash Position
+ - Forecast Accuracy Over Time
 
 ## 🧠 Data Engineering Skills Demonstrated
 - Batch data pipeline simulation

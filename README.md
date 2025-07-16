@@ -35,3 +35,46 @@ This solution highlights:
     B --> C[Excel Model (forecasting_template.xlsx)];
     C --> D[Power BI Dashboard (.pbix)];
     D --> E[Executive Decision Support];
+
+📊 Dashboard Metrics
+Monthly Revenue Forecast vs. Actual
+
+Expense Trends by Department
+
+Forecast Variance % (Category-level)
+
+Burn Rate and Net Cash Position
+
+Forecast Accuracy Over Time
+
+🧠 Data Engineering Skills Demonstrated
+Batch data pipeline simulation
+
+Forecast modeling logic layered post-ingestion
+
+Data cleansing using Excel & Python
+
+Dashboard integration with Power BI
+
+Modular repo design for scalability
+
+🔜 Roadmap
+ Add SQL staging scripts for raw → clean dataflow
+
+ Schedule automated forecast refresh with Python or Power Query
+
+ Connect to S3 or Azure Blob for real-world simulation
+
+ Dockerize for deployment and scalability
+
+📄 Case Study Included
+📘 Enterprise_Financial_Forecasting_Case_Study.pdf
+Includes context, business goals, assumptions, and how this pipeline supports leadership-level decisions.
+
+👤 Author
+Yengkong Sayaovong
+Entry-Level Data Engineer | Financial Systems Background
+GitHub: @YSayaovong
+LinkedIn: linkedin.com/in/yengkongsayaovong
+
+🧩 This project bridges finance and data engineering—demonstrating how forecasting systems can be structured as production-grade data pipelines.

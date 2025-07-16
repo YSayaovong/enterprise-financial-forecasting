@@ -31,8 +31,6 @@ This solution highlights:
 
 ## 📈 Pipeline Workflow
 
-```mermaid
-graph TD;
     A[Raw Financial Data (data_raw)] --> B[Python/SQL Scripts];
     B --> C[Excel Model (forecasting_template.xlsx)];
     C --> D[Power BI Dashboard (.pbix)];

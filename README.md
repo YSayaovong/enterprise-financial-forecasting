@@ -31,7 +31,7 @@ This solution highlights:
 
 ## 📈 Pipeline Workflow
 
-    A[Raw Financial Data (data_raw)] --> B[Python/SQL Scripts];
+    A [Raw Financial Data (data_raw)] --> B [Python/SQL Scripts];
     B --> C[Excel Model (forecasting_template.xlsx)];
     C --> D[Power BI Dashboard (.pbix)];
     D --> E[Executive Decision Support];

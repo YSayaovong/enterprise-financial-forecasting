@@ -59,6 +59,9 @@ The model calculates:
 - Rolling 3-month and 12-month projections  
 - Variance bands for confidence scoring  
 
+**Forecasting Model Snapshot**  
+![Forecast Model](https://github.com/YSayaovong/enterprise-financial-forecasting/blob/main/images/forcasting_model.PNG)
+
 Analysts previously built these formulas manually; now they simply refresh the model.
 
 ---

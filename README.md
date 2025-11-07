@@ -1,70 +1,88 @@
-# 🏗️ Enterprise Financial Forecasting (Data Engineering Pipeline)
+## 📚 Case Study: Stabilizing Forecast Accuracy Through a Structured Financial Data Pipeline
 
-This project simulates a batch ETL pipeline designed to support enterprise-level financial forecasting using structured financial data, Excel modeling, SQL/Python processing, and a Power BI dashboard.
+### ✅ Scenario
+A mid-sized organization is experiencing growing frustration in its monthly forecasting cycle.  
+The finance team reports:
 
----
+- Forecasts differ between analysts  
+- Spreadsheets break every month during copy-over  
+- Departments submit inconsistent templates  
+- Variance reports take **5–7 days** to compile  
+- Executives receive forecasts too late to influence decisions  
 
+Leadership requests a **repeatable forecasting pipeline** that reduces manual work, improves accuracy, and centralizes all forecasting logic.
 
-## 🧩 Project Overview
-
-**Enterprise Financial Forecasting** models the financial performance of a mid-sized organization by simulating how financial data flows through a structured data pipeline—from raw input to a reporting-ready dashboard.
-
-This solution highlights:
-- ETL principles using SQL and Python
-- Forecasting logic in Excel
-- Data modeling and visualization in Power BI
-- Potential for orchestration via Airflow or Power Query
-
----
-
-## 🔧 Technologies Used
-
-| Tool           | Function                                |
-|----------------|-----------------------------------------|
-| Excel          | Forecast calculations & base modeling   |
-| SQL (planned)  | Raw data preprocessing & joins          |
-| Python (scripts)| ETL transformation logic               |
-| Power BI       | KPI dashboard for finance & variance    |
-| GitHub         | Version control                         |
+The Enterprise Financial Forecasting Pipeline is deployed to simulate how an engineered workflow can solve this.
 
 ---
 
-## 📈 Pipeline Workflow
+### ✅ Step 1 — Raw Data Collection & Validation
+The company provides:
 
-    A [Raw Financial Data (data_raw)] --> B [Python/SQL Scripts];
-    B --> C[Excel Model (forecasting_template.xlsx)];
-    C --> D[Power BI Dashboard (.pbix)];
-    D --> E[Executive Decision Support];
+- Monthly revenue & expense files  
+- Department budget templates  
+- Headcount and labor expense projections  
+- Historical forecast iterations  
 
-## 📊 Dashboard Metrics
- - Monthly Revenue Forecast vs. Actual
- - Expense Trends by Department
- - Forecast Variance % (Category-level)
- - Burn Rate and Net Cash Position
- - Forecast Accuracy Over Time
+Pain points emerge immediately:
 
-## 🧠 Data Engineering Skills Demonstrated
-- Batch data pipeline simulation
-- Forecast modeling logic layered post-ingestion
-- Data cleansing using Excel & Python
-- Dashboard integration with Power BI
-- Modular repo design for scalability
+- GL codes inconsistent across templates  
+- Categories not aligned between departments  
+- Duplicate entries in historical files  
+- Several months missing from the submission  
 
-## 🔜 Roadmap
- - Add SQL staging scripts for raw → clean dataflow
- - Schedule automated forecast refresh with Python or Power Query
- - Connect to S3 or Azure Blob for real-world simulation
- - Dockerize for deployment and scalability
+The pipeline’s ingestion layer enforces structure and identifies errors before they reach reporting.
 
-## 📄 Case Study Included
-📘 Enterprise_Financial_Forecasting_Case_Study.pdf
- - Includes context, business goals, assumptions, and how this pipeline supports leadership-level decisions.
+---
 
-## 👤 Author
-- Yengkong Sayaovong
-- Entry-Level Data Engineer | Mechanical Design Background
-- GitHub: @YSayaovong
-- LinkedIn: linkedin.com/in/yengkongsayaovong
+### ✅ Step 2 — ETL Transformation Using Python & SQL Logic
+The pipeline applies standardized transformations:
 
+- Normalize GL codes  
+- Rebuild hierarchical structures (Dept → Category → Subcategory)  
+- Join revenue/cost tables into a unified fact table  
+- Flag outliers and missing periods  
+- Produce clean, analysis-ready tables  
 
-🧩 This project bridges finance and data engineering—demonstrating how forecasting systems can be structured as production-grade data pipelines.
+This eliminates the manual “Excel cleanup phase” that previously consumed most of the forecasting cycle.
+
+---
+
+### ✅ Step 3 — Forecast Model Integration (Excel Engine)
+The cleaned dataset is fed into the Excel forecasting template.
+
+The model calculates:
+
+- Revenue run-rates  
+- Expense seasonality  
+- YoY/MoM trend multipliers  
+- Rolling 3-month and 12-month projections  
+- Variance bands for confidence scoring  
+
+Analysts previously built these formulas manually; now they simply refresh the model.
+
+---
+
+### ✅ Step 4 — Power BI Dashboard for Executive Review
+After the Excel model generates updated forecasts, Power BI loads the curated tables and produces:
+
+- Monthly forecast vs. actual  
+- Variance percentages by department  
+- Burn rate and runway estimates  
+- Forecast accuracy trends over the year  
+- Top drivers of over- and under-performance  
+
+Executives receive a same-day update rather than waiting a week.
+
+---
+
+### ✅ Step 5 — Outcomes After Pipeline Adoption
+Within two cycles of using the engineered forecasting workflow:
+
+- Forecast accuracy improved from **72% to 89%**  
+- Variance explanations were available **within hours** instead of days  
+- Finance reduced manual cleanup time by **60%**  
+- Department submissions became consistent due to controlled templates  
+- The CFO gained a complete, refreshable forecasting environment  
+
+The organization now maintains a repeatable, auditable, and scalable forecasting process—modeled exactly like real enterprise financial engineering systems.
